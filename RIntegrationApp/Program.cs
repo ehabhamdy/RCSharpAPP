@@ -21,6 +21,7 @@ namespace RIntegrationApp
             // Direct parsing from R script.
             NumericVector group2 = engine.Evaluate("group2 <- c(29.89, 29.93, 29.72, 29.98, 30.02, 29.98)").AsNumeric();
 
+            //Calculating the mean of g1 and g2 vectors using (mean) R function
 
             engine.SetSymbol("g1", group1);
             engine.Evaluate("mean(g1)"); // print out in the console
